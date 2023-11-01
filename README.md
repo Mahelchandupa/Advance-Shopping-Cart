@@ -1,8 +1,8 @@
-# Advanced Shopping Cart with React Context and useReducer
+# Advanced Shopping Cart with React useContext and useReducer Hook
 
-## Welcome to the "Advanced Shopping Cart" repository! This project serves as an illustrative example for harnessing the power of React's useContext and useReducer hooks to build a feature-rich e-commerce application.
+#### Welcome to the "Advanced Shopping Cart" repository! This project serves as an illustrative example for harnessing the power of React's useContext and useReducer hooks to build a feature-rich e-commerce application.
 
-##Key Features
+### Key Features
 
 <ul>
   <li><b>Product Filtering Options:</b> Explore a wide range of filtering options to refine your shopping experience:
