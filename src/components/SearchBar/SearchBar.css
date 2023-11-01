@@ -1,0 +1,33 @@
+.search-bar-container{
+    position: absolute;
+    top: 100px;
+    right: 140px;
+    width: 320px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.search-bar-container.active{
+    display: flex;
+}
+.search-bar-container input{
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    color: #000;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .search-bar-container{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

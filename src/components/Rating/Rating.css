@@ -1,0 +1,12 @@
+.rating-star{
+    cursor: pointer;
+    font-size: 26px;
+    color: yellow;
+    margin-left: 4px;
+}
+
+@media screen and(max-width: 1400px) {
+    .rating-star{
+        font-size: 22px;
+    }
+}
