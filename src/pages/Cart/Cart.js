@@ -115,7 +115,7 @@ const Cart = () => {
             }
           </table>
 
-          <ToastContainer position="bottom-center" autoClose={1000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="dark"/>
+          <ToastContainer position="top-right" autoClose={500} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="dark"/>
 
           {/* Cart Table Small Screen  */}
             <div className="small_screen_cart_table_container">
@@ -125,7 +125,7 @@ const Cart = () => {
                         <tbody>
                            <tr>
                               <td style={{textAlign: "center", padding: "50px"}} colSpan={2} rowSpan={5}>Your Cart is Empty<br /><br />
-                      <Link style={{ backgroundColor: "green", color: "#fff", padding: "10px 40px", borderRadius: "5px" }} to="/">Continue Shopping</Link></td>
+                              <Link style={{ backgroundColor: "green", color: "#fff", padding: "10px 15px", borderRadius: "5px", fontSize: "14px" }} to="/">Continue Shopping</Link></td>
                            </tr>
                         </tbody>
                       ) :

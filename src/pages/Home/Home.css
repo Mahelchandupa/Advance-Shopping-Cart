@@ -86,4 +86,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 15px;
     }
+    .product_main-container .product-cat-title{
+      font-size: 28px;
+    }
   }

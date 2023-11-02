@@ -84,7 +84,7 @@ const SingleProduct = () => {
                                       }}><AiOutlinePlus /></button>
                                 </div>
                                 <button className="add-cart-btn" onClick={AddToCart}>ADD TO CART</button>
-                                <ToastContainer position="bottom-center" autoClose={1000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="dark"/>
+                                <ToastContainer position="top-right" autoClose={500} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="dark"/>
                             </div>
                             <hr />
                             <p className="pro-cat">Category :{product.category}</p>

@@ -64,12 +64,18 @@
 
 @media screen and (max-width: 500px) {
     .product-item-card{
-        min-height: 370px;
+        min-height: 340px;
     }
     .product-item-img{
         height: 200px;
     }
     .product-details{
         padding: 0 10px;
+    }
+    .product-details .product-name{
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
     }
 }

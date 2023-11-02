@@ -9,9 +9,7 @@ const SideBar = ({prop}) => {
 
     return (
         <div className={`sidebar-main-container ${prop ? 'active': ''}`}>
-            <div className='sidebar-container'>
                 <h1 className='sidebar-title'>Filters</h1>
-                <div className='sidebar-filters-container'>
                     <div className='category-filter'>
                         <h4 className='filter-title'>Filter By Category</h4>
                         <div className='category-container'>
@@ -93,8 +91,6 @@ const SideBar = ({prop}) => {
                             type: "CLEAR_FILTERS"
                         })
                     }}>Clear Filters</button>
-                </div>
-            </div>
         </div>
     )
 }
