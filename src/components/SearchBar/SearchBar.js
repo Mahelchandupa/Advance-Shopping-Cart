@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import './SearchBar.css'
-import { AiOutlineClose } from 'react-icons/ai'
 import { CartContext } from '../../context/CartContext'
 
 const SearchBar = ({prop}) => {

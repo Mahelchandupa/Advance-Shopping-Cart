@@ -53,6 +53,10 @@
   }
 
   @media screen and (max-width: 1400px) {
+    .home.active{
+        height: 100vh;
+        overflow: hidden;
+    }
     .product_main-container{
       padding: 0 20px;
     }
@@ -87,6 +91,6 @@
       grid-gap: 15px;
     }
     .product_main-container .product-cat-title{
-      font-size: 28px;
+      font-size: 24px;
     }
   }

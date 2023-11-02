@@ -2,13 +2,17 @@ import React, { useContext } from 'react'
 import './SideBar.css'
 import { CartContext } from '../../context/CartContext'
 import Rating from '../Rating/Rating'
+import { AiOutlineClose } from 'react-icons/ai'
 
-const SideBar = ({prop}) => {
+const SideBar = ({prop, fun}) => {
 
     const { FilterState: { InStock, filterByPrice, Byrating }, FilterDispatch } = useContext(CartContext)
 
     return (
-        <div className={`sidebar-main-container ${prop ? 'active': ''}`}>
+        <div className={` sidebar ${prop ? 'active': ''}`}>
+        <div className={`blur-container ${prop ? 'active': ''}`}></div>
+        <div className='sidebar-main-container'>
+                <AiOutlineClose className='sidebar-close-icon' onClick={() => fun(!prop)}/>
                 <h1 className='sidebar-title'>Filters</h1>
                     <div className='category-filter'>
                         <h4 className='filter-title'>Filter By Category</h4>
@@ -91,6 +95,7 @@ const SideBar = ({prop}) => {
                             type: "CLEAR_FILTERS"
                         })
                     }}>Clear Filters</button>
+        </div>
         </div>
     )
 }

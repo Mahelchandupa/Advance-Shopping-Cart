@@ -40,9 +40,9 @@ const Home = () => {
   }
 
   return (
-    <div className='home'>
+    <div className={`home ${activeFilter ? 'active' : ''}`}>
       <div className='home-container'>
-        <SideBar prop={activeFilter}/>
+        <SideBar prop={activeFilter} fun={setActiveFilter}/>
         <div className='product_main-container'>
           <div className='home-container-title-filter'>
             <h1 className='product-cat-title'>{ filterByCategory === "" ? 'ALL PRODUCTS' : filterByCategory }</h1>
